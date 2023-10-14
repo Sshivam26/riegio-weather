@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Regio-Weather</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,7 +23,7 @@
             </div>
         </div>
         <div class="weather__body">
-            <h1 class="weather__city">LOndon UK</h1>
+            <h1 class="weather__city">London UK</h1>
             <div class="weather__datetime"></div>
             <div class="weather__forecast"></div>
             <div class="weather__icon"></div>
@@ -65,6 +66,13 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/8d336ea4f8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".container"), {
+            max: 2,
+            speed: 7
+        });
+    </script>
     <script src="app.js"></script>
 </body>
 
