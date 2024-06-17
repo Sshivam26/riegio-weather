@@ -85,30 +85,30 @@ function getWeather(){
         weather__pressure.innerHTML = `${data.main.pressure} hPa`
         const body = document.body; 
             const weatherCondition = data.weather[0].main;
-
-            switch (weatherCondition) {
-                case "Haze":
-                    body.style.backgroundImage = "url('/image/haze.jpg')";
-                    break;
-                case "clear sky":
-                    body.style.backgroundImage = "url('/image/clear-sky.jpg')";
-                    break;
-                case "Rain":
-                    body.style.backgroundImage = "url('/image/rain.jpg')";
-                    break;
-                case "Mist":
-                    body.style.backgroundImage = "url('/image/mist.jpg')";
-                    break;
-                case "Clouds":
-                    body.style.backgroundImage = "url('/image/clouds.jpg')";
-                    break;
-                case "Snow":
-                    body.style.backgroundImage = "url('/image/snow.jpg')";
-                    break;
-                default:
-                    body.style.backgroundImage = "url('/image/default.jpg')";
-                    break;
-            }
+            body.style.backgroundImage = "url('/image/haze.jpg')";
+            // switch (weatherCondition) {
+            //     case "Haze":
+            //         body.style.backgroundImage = "url('/image/haze.jpg')";
+            //         break;
+            //     case "clear sky":
+            //         body.style.backgroundImage = "url('/image/clear-sky.jpg')";
+            //         break;
+            //     case "Rain":
+            //         body.style.backgroundImage = "url('/image/rain.jpg')";
+            //         break;
+            //     case "Mist":
+            //         body.style.backgroundImage = "url('/image/mist.jpg')";
+            //         break;
+            //     case "Clouds":
+            //         body.style.backgroundImage = "url('/image/clouds.jpg')";
+            //         break;
+            //     case "Snow":
+            //         body.style.backgroundImage = "url('/image/snow.jpg')";
+            //         break;
+            //     default:
+            //         body.style.backgroundImage = "url('/image/default.jpg')";
+            //         break;
+            // }
     })
     
 }
